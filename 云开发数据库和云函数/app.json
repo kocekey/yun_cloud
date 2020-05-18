@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/pay/pay",
+    "pages/friendlist/friendlist",
+    "pages/friend/friend",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "书本管理"
+      
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "上传图片"
+    },
+    {
+      "pagePath": "pages/friendlist/friendlist",
+      "text": "发表动态"
+    },
+    {
+      "pagePath": "pages/pay/pay",
+      "text": "扫码支付"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

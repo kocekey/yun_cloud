@@ -1,0 +1,47 @@
+<view>
+
+<image class="top_img" mode="aspectFill" src="../images/6a63f6246b600c334c3e91cb1e4c510fd9f9a16a.jpg"></image>
+<image catchtap="jumptopyq" mode="widthFix" class="tbdongtai" src="../images/_20200403140326.jpg"></image>
+<image class="head_img" src="../images/792be55955d0180d9cece077c3068a5.jpg"></image>
+
+<block wx:for="{{dataarr}}" wx:key='key'>
+<view class="list">
+<image class="list_img" src="../images/792be55955d0180d9cece077c3068a5.jpg"></image>
+  <view class="list_name">
+  <text>17</text>
+  <textarea auto-height class="list_area" value="{{item.text}}"></textarea>
+  </view>
+</view>
+
+<view class="list_images">
+<view wx:for="{{item.addedimgs}}" wx:key="key">
+<image class="list_image" mode="aspectFill" src="{{item}}"/>
+</view>
+</view>
+
+<view catchtap="diantap" class="diandian" data-index="{{index}}">
+<text class="text">...</text>
+</view>
+
+<view wx:if="{{hidden==index}}" class="caozuo">
+<image style="width:30rpx;height:30rpx" src="../images/zan.jpg"></image>
+<text catchtap="zantap" data-text="{{item.text}}">赞</text>
+<image style="width:30rpx;height:30rpx;margin-left:30rpx" src="../images/comment.jpg"></image>
+<text catchtap="commenttap" data-index="{{index}}">评论</text>
+</view>
+
+<view wx:if="{{comm==index}}" class="commented">
+<input value="" data-text="{{item.text}}" bindconfirm="concomment"></input>
+</view>
+
+<view class="dianzancont">
+<image wx:if="{{item.dianzan!=null}}" style="width:30rpx;height:30rpx" src="../images/zan.jpg"></image>
+<text>{{item.dianzan}}</text>
+<view wx:if="{{item.inputtext!=null}}">
+  <text>17:</text><text>{{item.inputtext}}</text>
+</view>
+</view>
+
+</block>
+
+</view>

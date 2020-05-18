@@ -1,0 +1,44 @@
+.top{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  justify-content: space-between;
+}
+.top_img{
+  width: 50rpx;
+  height: 50rpx;
+}
+.top_out{
+  display: flex;
+   width: 100rpx;
+   height: 50rpx;
+   background-color:coral;
+   color: white;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10rpx;
+}
+.cont{
+  margin-top: 30rpx;
+  margin-left: 45rpx;
+  width: 660rpx;
+  height: 200rpx;
+  overflow-wrap: break-word;
+}
+.imgs{
+  margin-left: 45rpx;
+}
+.mid_img{
+  width: 250rpx;
+  height: 250rpx;
+  margin-right: 15rpx;
+}
+.del{
+  border-radius: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: -210rpx;
+  left: -50rpx;
+}

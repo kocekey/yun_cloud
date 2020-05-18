@@ -1,0 +1,58 @@
+/**index.wxss**/
+.bookcon{
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+  font-weight: 600;
+}
+.bookupdatacon{
+  display: flex;
+  justify-content: space-around;
+  font-size: larg;
+  font-weight: 400;
+}
+.booklist{
+  display: flex;
+  justify-content: space-around;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.booklist_delbutton{
+  background-color:red;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  font-size: small;
+}
+.booklist_updbutton{
+  background-color:greenyellow;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  font-size: small;
+}
+.add_post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rpx;
+}
+.add_post input{
+  margin-bottom: 10rpx;
+  width: 50%;
+  background-color:gainsboro;
+}
+.updata_post{
+  display:flex;
+  justify-content: space-around;
+  border-top:1rpx solid black;
+  border-bottom:1rpx solid black;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.updata_post input{
+  text-align: center;
+  width: 100rpx;
+  border:1rpx solid black;
+  margin-right: 10rpx;
+}

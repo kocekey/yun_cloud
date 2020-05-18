@@ -1,0 +1,20 @@
+<view>
+<image catchtap="loadimg" class="loadimg" data-num="1" src="{{originalimg1}}"></image>
+<image catchtap="loadimg" class="loadimg" data-num="2" src="{{originalimg2}}"></image>
+</view>
+<!-- <view>
+<image catchtap="loadimg" class="loadimg" data-num="3" src="{{originalimg3}}"></image>
+<image catchtap="loadimg" class="loadimg" data-num="4" src="{{originalimg4}}"></image>
+</view> -->
+<view>
+<button catchtap="loadvideo">上传视频</button>
+<video id="myVideo" class="loadvideo" src="{{originalvideo}}" show-mute-btn enable-danmu danmu-btn controls></video>
+</view>
+<view>
+<input placeholder="请输入需要发送的弹幕" bindblur="getinput"></input>
+<button bindtap="senddanmu">发送弹幕</button>
+</view>
+<view class="file">
+<button catchtap="uploadfile">上传xlsx文件</button>
+<button catchtap="openfile">打开文件</button>
+</view>

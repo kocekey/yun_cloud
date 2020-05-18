@@ -1,0 +1,20 @@
+<view>
+
+<view class="top">
+<image class="top_img" src="../images/u=.jpg"/>
+<text class="top_out" catchtap="okto">发表</text>
+</view>
+
+<view>
+<textarea bindblur="gettext" class="cont" placeholder="这一刻的想法..."></textarea>
+</view>
+
+<view class="imgs">
+   <block wx:for="{{addedimgs}}" wx:key='key'>
+      <image hidden="{{hidden}}" class="mid_img" src="{{item}}"></image>
+      <image catchtap="delimg" data-index="{{index}}"  class="del" src="../images/caca.jpg"/> 
+   </block>
+      <image catchtap="uploadimg" class="mid_img" src="{{addimg}}"></image>
+</view>
+
+</view>

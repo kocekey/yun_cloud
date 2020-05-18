@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="con">
+    <view class="bookcon">
+    <text>id</text>
+    <text>书名</text>
+    <text>价格</text>
+    <text>操作</text>
+    <text>操作</text>
+    </view>
+    <view class="booklist" wx:for="{{bookarr}}">
+    <text>{{item.id}}</text>
+    <text>{{item.bookname}}</text>
+    <text>{{item.price}}元</text>
+    <text class="booklist_delbutton" data-id="{{item.id}}" catchtap="removebook">删除</text>
+    <text class="booklist_updbutton" data-id="{{item.id}}" catchtap="updatabook">修改</text>
+    </view>
+    <view class="add_post" >
+    <input placeholder="请输入id" value="{{aid}}" bindblur="addid"></input>
+    <input placeholder="请输入书名" value="{{abookname}}" bindblur="addbookname"></input>
+    <input placeholder="请输入价格" value="{{aprice}}" bindblur="addprice"></input>
+    <button type="primary" catchtap="addbook">添加</button>
+    </view>
+    <view wx:if="{{showupdata}}">
+    <view class="bookupdatacon">
+    <text>编号</text>
+    <text>书名</text>
+    <text>价格</text>
+    </view>
+    <view class="updata_post">
+    <input value="{{updataarr[0].id}}" bindblur="updataid"></input>
+    <input value="{{updataarr[0].bookname}}" bindblur="updatabookname"></input>
+    <input value="{{updataarr[0].price}}" bindblur="updataprice"></input>
+    </view>
+    <button type="primary" catchtap="confirmupdata">确认修改</button>
+    </view>
+</view>
